@@ -1,7 +1,8 @@
 .example-container {
     display: flex;
     flex-direction: column;
-    margin-left: 617px;
+    margin-left: 696px;
+    width: 1076px;
   }
   
   .example-container > * {
@@ -16,8 +17,8 @@
   }
   
   .mat-card-content{
-
-    margin-left: 181px;
+    
+    margin-left: 194px;
 
 }
   .mat-card-footer{

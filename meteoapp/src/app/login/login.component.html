@@ -1,0 +1,14 @@
+<div class="example-container">
+    <mat-card>
+        <mat-card-content>
+          <mat-form-field>
+            <input matInput placeholder="Username" type="text" class="example-right-align">
+          </mat-form-field><br/>
+          <mat-form-field>
+            <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'">
+          </mat-form-field><br/>
+          <button mat-button >Login</button><br/>
+          <button mat-button [routerLink]="['/signup']" >Signup</button>
+    </mat-card-content>
+  </mat-card>
+</div>

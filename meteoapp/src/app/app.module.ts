@@ -11,12 +11,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule,} from '@angular/material/form-field';
 import { RouterModule } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
+    LoginComponent,
 
    
   ],
@@ -31,6 +33,8 @@ import { SignupComponent } from './signup/signup.component';
     MatButtonModule,
     RouterModule.forChild([
       { path: 'signup', component:SignupComponent},
+      {path:'login', component:LoginComponent},
+      {path:'', redirectTo: 'login', pathMatch: 'full'}
     ])
   ],
   providers: [],
