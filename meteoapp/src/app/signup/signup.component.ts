@@ -8,7 +8,6 @@ import { SignupService } from '../services/signup/signup.service';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-  private apiUrl ='localhost:3000/ul/signup';
   username:string;
   firstname:string;
   secondname:string;
@@ -16,7 +15,6 @@ export class SignupComponent implements OnInit {
   email:string;
   constructor(private signupservice: SignupService) { }
   addUser(username, firstname, secondname, password, email) {
-    console.log("hello")
     console.log(username, firstname, secondname, password, email)
     this.signupservice.addUser(username, firstname, secondname, password, email)
   }
