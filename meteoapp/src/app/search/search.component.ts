@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GetWeatherService } from '../services/search/search.service';
 import { LoginService } from '../services/login/login.service';
+import { Router } from '@angular/router';
 import moment from 'moment/src/moment'
 @Component({
   selector: 'app-search',
@@ -12,7 +13,8 @@ export class SearchComponent implements OnInit {
   location:string;
   coordinates:Object;
   formattedDate:String;
-  constructor(private signupservice: GetWeatherService, private loginservice: LoginService) { }
+  results:Object;
+  constructor(private signupservice: GetWeatherService, private loginservice: LoginService, private router: Router) { }
   locate(date,location) {
     this.date=date
   const momentDate = new Date(date); // Replace event.value with your date value
@@ -22,7 +24,10 @@ export class SearchComponent implements OnInit {
         .subscribe((res) => {
           this.coordinates={ ...res}
           this.signupservice.getWeather(this.coordinates, this.formattedDate, this.loginservice.cookieValue )
-          .subscribe(res => console.log(res))
+          .subscribe((res) => {
+            this.results=res
+            console.log(this.results)
+          })
         }
           );
        

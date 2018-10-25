@@ -25,16 +25,20 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatMomentDateModule, MAT_MOMENT_DATE_FORMATS } from "@angular/material-moment-adapter";
 import { CookieService } from 'ngx-cookie-service';
 import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
+import { SearchresultsComponent } from './searchresults/searchresults.component';
+import {MatListModule} from '@angular/material/list';
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
     LoginComponent,
     SearchComponent,
+    SearchresultsComponent,
 
    
   ],
   imports: [BrowserAnimationsModule,
+    MatListModule,
     MatMomentDateModule ,
     MatNativeDateModule,
     BrowserModule,
