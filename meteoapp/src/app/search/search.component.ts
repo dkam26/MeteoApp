@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { GetWeatherService } from '../services/search/search.service';
 import { LoginService } from '../services/login/login.service';
 import { Router } from '@angular/router';
-import moment from 'moment/src/moment'
+import moment from 'moment/src/moment';
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -19,20 +20,20 @@ export class SearchComponent implements OnInit {
     this.date=date
   const momentDate = new Date(date); // Replace event.value with your date value
   this.formattedDate = moment(momentDate).format("YYYY-MM-DDTHH:MM:SS");
-
-    return this.signupservice.locate(location, this.loginservice.cookieValue ) 
+   this.signupservice.locate(location, this.loginservice.cookieValue ) 
         .subscribe((res) => {
           this.coordinates={ ...res}
           this.signupservice.getWeather(this.coordinates, this.formattedDate, this.loginservice.cookieValue )
           .subscribe((res) => {
             this.results=res
-            console.log(this.results)
           })
         }
           );
+    return this.results;
        
   }
  
   ngOnInit() {
   }
+
 }

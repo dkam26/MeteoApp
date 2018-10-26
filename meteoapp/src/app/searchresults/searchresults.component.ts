@@ -18,13 +18,20 @@ export class SearchresultsComponent implements OnInit {
   }
   
   ngOnInit() {
+   
+
+  }
+
+  ngOnChanges() {       
     this.latitude = this.results['latitude'];
     this.longitude = this.results['longitude'];
     this.icon = this.results['daily']['data'][0]['icon'];
     this.windspeed = this.results['daily']['data'][0]['windSpeed'];
     this.hummidity = this.results['daily']['data'][0]['humidity'];
-    this.summary = this.results['daily']['data'][0]['summary'];
-    console.log(this.hummidity)
+    this.summary = this.results['daily']['data'][0]['summary'];   
+  
   }
+  ngOnDestroy() {
 
+  }
 }
