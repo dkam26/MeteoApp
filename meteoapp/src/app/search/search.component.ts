@@ -3,7 +3,7 @@ import { GetWeatherService } from '../services/search/search.service';
 import { LoginService } from '../services/login/login.service';
 import { Router } from '@angular/router';
 import moment from 'moment/src/moment';
-import { Location } from '@angular/common';
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -25,7 +25,7 @@ export class SearchComponent implements OnInit {
           this.coordinates={ ...res}
           this.signupservice.getWeather(this.coordinates, this.formattedDate, this.loginservice.cookieValue )
           .subscribe((res) => {
-            this.results=res
+            this.results={"Data":res, "Location":location}
           })
         }
           );

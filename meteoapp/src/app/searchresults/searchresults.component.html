@@ -12,5 +12,13 @@
             <h4>Hummidity</h4>
             <p> {{hummidity }}</p>
           </mat-list-item>
+          <div id ="keep">
+        <mat-list-item>
+            <div class="example-button-row">
+                <button mat-raised-button color="primary" (click)="savedata(summary, windspeed,hummidity,time,location)">Keep data</button>
+              </div>
+            
+        </mat-list-item>
+      </div>
    </mat-list>
 </mat-card>

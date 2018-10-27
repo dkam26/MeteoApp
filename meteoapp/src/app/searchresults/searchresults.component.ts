@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { SavedataService} from '../services/savedata/savedata.service';
+import { LoginService } from '../services/login/login.service';
 @Component({
   selector: 'app-searchresults',
   templateUrl: './searchresults.component.html',
@@ -13,7 +14,10 @@ export class SearchresultsComponent implements OnInit {
   windspeed:Object;
   hummidity:Object;
   summary:Object;
-  constructor() { 
+  time: Object;
+  location: Object;
+  data: Object;
+  constructor(private savedataservice: SavedataService, private loginservice: LoginService) { 
     
   }
   
@@ -21,15 +25,25 @@ export class SearchresultsComponent implements OnInit {
    
 
   }
-
-  ngOnChanges() {       
-    this.latitude = this.results['latitude'];
-    this.longitude = this.results['longitude'];
-    this.icon = this.results['daily']['data'][0]['icon'];
-    this.windspeed = this.results['daily']['data'][0]['windSpeed'];
-    this.hummidity = this.results['daily']['data'][0]['humidity'];
-    this.summary = this.results['daily']['data'][0]['summary'];   
-  
+ savedata(summary, windspeed, humidity, Date, location){
+   this.data ={"weatherConditions":summary,
+   "windSpeed":windspeed,
+   "humidity":humidity,
+   "Date":Date,
+   "location":location
+ }
+  this.savedataservice.savedata(this.data, this.loginservice.cookieValue);
+ }
+  ngOnChanges() {   
+    this.location = this.results["Location"];
+    this.time = this.results["Data"]['daily']['data'][0]['time'];
+    this.latitude = this.results["Data"]['latitude'];
+    this.longitude = this.results["Data"]['longitude'];
+    this.icon = this.results["Data"]['daily']['data'][0]['icon'];
+    this.windspeed = this.results["Data"]['daily']['data'][0]['windSpeed'];
+    this.hummidity = this.results["Data"]['daily']['data'][0]['humidity'];
+    this.summary = this.results["Data"]['daily']['data'][0]['summary']; 
+      
   }
   ngOnDestroy() {
 
