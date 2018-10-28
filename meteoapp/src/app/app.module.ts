@@ -27,6 +27,8 @@ import { CookieService } from 'ngx-cookie-service';
 import {DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE} from '@angular/material/core';
 import { SearchresultsComponent } from './searchresults/searchresults.component';
 import {MatListModule} from '@angular/material/list';
+import { NavbarComponent } from './navbar/navbar.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -35,8 +37,10 @@ import {MatListModule} from '@angular/material/list';
     LoginComponent,
     SearchComponent,
     SearchresultsComponent,
+    NavbarComponent,
   ],
   imports: [BrowserAnimationsModule,
+    MatToolbarModule,
     MatListModule,
     MatMomentDateModule ,
     MatNativeDateModule,
