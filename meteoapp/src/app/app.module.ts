@@ -29,6 +29,7 @@ import { SearchresultsComponent } from './searchresults/searchresults.component'
 import {MatListModule} from '@angular/material/list';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { DisplaydataComponent } from './displaydata/displaydata.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     SearchComponent,
     SearchresultsComponent,
     NavbarComponent,
+    DisplaydataComponent,
   ],
   imports: [BrowserAnimationsModule,
     MatToolbarModule,
@@ -59,6 +61,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
       { path: 'signup', component:SignupComponent},
       {path:'login', component:LoginComponent},
       {path: 'search', component:SearchComponent},
+      {path: 'data', component:DisplaydataComponent},
       {path:'', redirectTo: 'login', pathMatch: 'full'}
     ])
   ],
