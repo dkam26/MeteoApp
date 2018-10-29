@@ -32,7 +32,8 @@ export class SearchresultsComponent implements OnInit {
    "Date":Date,
    "location":location
  }
-  this.savedataservice.savedata(this.data, this.loginservice.cookieValue);
+  this.savedataservice.savedata(this.data, this.loginservice.cookieValue
+    );
  }
   ngOnChanges() {   
     this.location = this.results["Location"];
