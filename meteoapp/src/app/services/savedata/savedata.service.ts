@@ -10,9 +10,7 @@ export class SavedataService {
   savedata(data, token){
 
     const uri = 'http://localhost:3000/ul/data';
-    const obj = {
-      data: data,
-  };
+    const obj =  data;
   const httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json',

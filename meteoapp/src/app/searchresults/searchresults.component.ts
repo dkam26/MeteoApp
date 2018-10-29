@@ -29,11 +29,10 @@ export class SearchresultsComponent implements OnInit {
    this.data ={"weatherConditions":summary,
    "windSpeed":windspeed,
    "humidity":humidity,
+   "location":location,
    "Date":Date,
-   "location":location
  }
-  this.savedataservice.savedata(this.data, this.loginservice.cookieValue
-    );
+  this.savedataservice.savedata(this.data, this.loginservice.cookieValue);
  }
   ngOnChanges() {   
     this.location = this.results["Location"];
