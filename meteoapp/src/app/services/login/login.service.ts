@@ -25,4 +25,8 @@ export class LoginService {
     console.log(this.cookieValue);
     this.router.navigate(['/search'])});
   }
+  logout(){
+    this.cookieService.delete('Test');
+    this.router.navigate(['/login']);
+  }
 }

@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <button mat-button [routerLink]="['/search']" >Return to search</button>
+    <button mat-button id="logout" >logout</button>
+</mat-toolbar>
+<div *ngIf= 'results'>
+    <mat-list *ngFor= 'let result of results'>
+        <mat-card>
+            <mat-list-item> 
+                <h4>Location</h4>
+                <p>{{result['location']}}</p> 
+            </mat-list-item>
+            <mat-list-item> 
+               <h4><img src="assets/img/img.jpg"></h4>
+               <p> {{result['weatherConditions']}}</p>
+             </mat-list-item>
+            <mat-list-item> 
+              <h4>Humidity</h4>
+              <p>{{result['humidity']}} </p>
+
+            </mat-list-item>
+            <mat-list-item> 
+                <h4>Wind speed</h4>
+                <p></p>{{result['windSpeed']}} </mat-list-item>
+          
+        </mat-card>
+    </mat-list>
+  </div>
