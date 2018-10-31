@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "npm update  && node server.js",
+		"start-dev": "npm run link && ng build && node server.js",
+		"postinstall": "ng build --prod",
+		"preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -57,9 +60,5 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "^3.1.4"
-  },
-  "engines": {
-    "node": "8.11.4",
-    "npm": "5.6.0"
   }
 }
