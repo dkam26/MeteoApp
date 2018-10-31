@@ -12,7 +12,7 @@ export class LoginService {
              private cookieService: CookieService) {}
   loginUser(username, password){
     console.log(username,password)
-    const uri = 'http://localhost:3000/ul/login';
+    const uri = 'https://meteoapiexpress.herokuapp.com/ul/login';
     const obj = {
       username: username,
       password: password,

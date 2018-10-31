@@ -10,7 +10,7 @@ export class QuerydataService {
   constructor(private http: HttpClient, private router:Router) { }
   querydata( token){
 
-    const uri = 'http://localhost:3000/ul/querydata';
+    const uri = 'https://meteoapiexpress.herokuapp.com/ul/querydata';
     
   const httpOptions = {
     headers: new HttpHeaders({

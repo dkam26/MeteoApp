@@ -9,7 +9,7 @@ export class SavedataService {
   constructor(private http: HttpClient) { }
   savedata(data, token){
 
-    const uri = 'http://localhost:3000/ul/data';
+    const uri = 'https://meteoapiexpress.herokuapp.com/ul/data';
     const obj =  data;
   const httpOptions = {
     headers: new HttpHeaders({

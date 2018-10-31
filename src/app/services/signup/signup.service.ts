@@ -9,7 +9,7 @@ export class SignupService {
 
   constructor(private http: HttpClient, private router:Router) {}
   addUser(username, firstname, secondname, password, email){
-    const uri = 'http://localhost:3000/ul/signup';
+    const uri = 'https://meteoapiexpress.herokuapp.com/ul/signup';
     const obj = {
       username: username,
       firstname: firstname,
