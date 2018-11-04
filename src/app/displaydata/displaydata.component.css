@@ -1,8 +1,8 @@
 .mat-toolbar.mat-toolbar-single-row {
     margin-top: 21px;
-    margin-left: 48px;
+    margin-left: 42px;
     margin-right: 321px;
-    width: 1378px;
+    width: 1354px;
     
 }
 #logout {
@@ -12,7 +12,7 @@
     width: 1154px;
     margin-top: 70px;
     height: 400px;
-    margin-left: 159px;
+    margin-left: 104px;
 }
 .example-form-field {
     width: 400px;
