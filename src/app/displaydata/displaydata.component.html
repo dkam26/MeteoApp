@@ -2,10 +2,11 @@
     <button mat-button [routerLink]="['/search']" >Return to search</button>
     <button mat-button id="logout" >logout</button>
 </mat-toolbar>
+{{result}}
 <div *ngIf= 'results'>
     <mat-list *ngFor= 'let result of results'>
         <mat-card>
-            {{result}}
+           
             <mat-list-item> 
                         <h4>Record time</h4>
                         <p>{{result['date']}}</p> 
