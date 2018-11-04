@@ -25,12 +25,12 @@ export class SearchresultsComponent implements OnInit {
    
 
   }
- savedata(summary, windspeed, humidity, Date, location){
+ savedata(summary, windspeed, humidity, date, location){
    this.data ={"weatherConditions":summary,
    "windSpeed":windspeed,
    "humidity":humidity,
    "location":location,
-   "Date":Date,
+   "date":date,
  }
   this.savedataservice.savedata(this.data, this.loginservice.cookieValue);
  }
