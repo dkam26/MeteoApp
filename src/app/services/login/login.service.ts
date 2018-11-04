@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-
+import {MatSnackBar} from '@angular/material';
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
   cookieValue = 'Unknown';
   constructor(private http: HttpClient, private router:Router,
-             private cookieService: CookieService) {}
+             private cookieService: CookieService,public snackBar: MatSnackBar) {}
   loginUser(username, password){
     console.log(username,password)
     const uri = 'https://meteoapiexpress.herokuapp.com/ul/login';
@@ -18,12 +18,18 @@ export class LoginService {
       password: password,
   };
   this.http.post(uri, obj)
-  .subscribe(res => {
+  .subscribe((res) => {
     
     this.cookieService.set( 'Test', res['token'] )
     this.cookieValue = this.cookieService.get('Test');
     console.log(this.cookieValue);
-    this.router.navigate(['/search'])});
+    this.router.navigate(['/search'])
+  },
+  (error)=>{
+    this.snackBar.open(error.error['Message']);
+    console.log(error.error['Message'])
+  }
+  );
   }
   logout(){
     this.cookieService.delete('Test');
