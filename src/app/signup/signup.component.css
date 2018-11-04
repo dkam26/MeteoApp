@@ -42,3 +42,9 @@ mat-form-field.ng-tns-c2-0.mat-primary.mat-form-field-type-mat-input.mat-form-fi
 mat-form-field.ng-tns-c2-1.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-hide-placeholder{
     text-align: center; 
 }
+#title{
+  text-align: center
+}
+#signup{
+  margin-top: 60px
+}
