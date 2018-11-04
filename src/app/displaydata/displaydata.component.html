@@ -6,6 +6,10 @@
     <mat-list *ngFor= 'let result of results'>
         <mat-card>
             <mat-list-item> 
+                        <h4>Record time</h4>
+                        <p>{{result['date']}}</p> 
+                    </mat-list-item>
+            <mat-list-item> 
                 <h4>Location</h4>
                 <p>{{result['location']}}</p> 
             </mat-list-item>
