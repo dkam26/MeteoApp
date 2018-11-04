@@ -21,6 +21,7 @@ import { SearchComponent } from './search/search.component';
 import {
   MatNativeDateModule
 } from '@angular/material';
+import {MatSnackBar} from '@angular/material';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatMomentDateModule, MAT_MOMENT_DATE_FORMATS } from "@angular/material-moment-adapter";
 import { CookieService } from 'ngx-cookie-service';
