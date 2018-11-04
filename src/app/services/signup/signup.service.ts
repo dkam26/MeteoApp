@@ -18,6 +18,6 @@ export class SignupService {
       email: email
   };
   this.http.post(uri, obj)
-  .subscribe(res => console.log);
+  .subscribe(res => this.router.navigate(['/login']));
   }
 }
