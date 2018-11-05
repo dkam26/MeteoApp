@@ -49,3 +49,7 @@ mat-form-field.ng-tns-c2-1.mat-primary.mat-form-field-type-mat-input.mat-form-fi
 #title{
   text-align: center
 }
+.example-container.ng-untouched.ng-pristine.ng-invalid {
+  margin-left: -90px;
+  width: 500px;
+}

@@ -32,6 +32,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { DisplaydataComponent } from './displaydata/displaydata.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +42,7 @@ import { DisplaydataComponent } from './displaydata/displaydata.component';
     SearchresultsComponent,
     NavbarComponent,
     DisplaydataComponent,
+   
   
   ],
   imports: [BrowserAnimationsModule,
@@ -60,6 +62,7 @@ import { DisplaydataComponent } from './displaydata/displaydata.component';
     HttpClientModule,
     FormsModule,
     MatDatepickerModule,
+  
     RouterModule.forChild([
       { path: 'signup', component:SignupComponent},
       {path:'login', component:LoginComponent},

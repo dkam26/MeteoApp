@@ -1,18 +1,21 @@
+<!DOCTYPE html>
 <div class="example-container">
     <mat-card >
      <h2 id="title">MeteoApp</h2>
     </mat-card>
     <mat-card id ="login">
         <mat-card-content>
-          <mat-form-field>
-            <input matInput placeholder="Username" type="text" class="example-right-align" [(ngModel)]="username">
+            <form class="example-container">
+            <mat-form-field>
+            <input matInput placeholder="Username" type="text" class="example-right-align" name= "username"[(ngModel)]="username" autocomplete="username" required />
           </mat-form-field><br/>
           <mat-form-field>
-            <input matInput placeholder="Password" type="password" [(ngModel)]="password">
+            <input matInput placeholder="Password" type="password" name="password"[(ngModel)]="password" autocomplete="password" required />
           </mat-form-field><br/>
           <button mat-button (click)="loginUser(username, password)" >Login</button><br/>
           
           <button mat-button [routerLink]="['/signup']" >Signup</button>
+        </form>
     </mat-card-content>
   </mat-card>
 </div>
