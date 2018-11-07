@@ -22,5 +22,8 @@ export class DisplaydataComponent implements OnInit {
     this.querydataservice.deletedata(this.loginservice.cookieValue, results._id)
  
   }
+  logout(){
+    this.loginservice.logout();
+  }
 
 }
