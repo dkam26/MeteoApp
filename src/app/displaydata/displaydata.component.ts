@@ -14,9 +14,13 @@ export class DisplaydataComponent implements OnInit {
   ngOnInit() {
     this.querydataservice.querydata(this.loginservice.cookieValue).subscribe((res) =>{
        this.results = res;
-       console.log(this.results)
+
     })
 
+  }
+  deleteData(results){
+    this.querydataservice.deletedata(this.loginservice.cookieValue, results._id)
+ 
   }
 
 }

@@ -17,7 +17,7 @@
             </mat-list-item>
             <mat-list-item> 
                <h4><img src="assets/img/img.jpg"></h4>
-               <p> {{result['weatherConditions']}}</p>
+               <p> {{result['weatherConditions']}}</p> <button id="deleteButton"mat-raised-button color="primary" (click)="deleteData(result)">Delete</button>
              </mat-list-item>
             <mat-list-item> 
               <h4>Humidity</h4>

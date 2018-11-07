@@ -22,6 +22,6 @@ export class SavedataService {
     this.snackBar.open(res['Message'],'',{
       duration: 500,
     });
-     console.log(res)});
+     });
   }
 }

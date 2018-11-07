@@ -6,7 +6,7 @@
     
 }
 #logout {
-    margin-left: 1575px;
+    margin-left: 1100px;
 }
 .mat-card{
     width: 1154px;
@@ -35,4 +35,7 @@ p{
 }
 .mat-list-item {
     margin-top: 36px;
+}
+#deleteButton{
+    margin-left: 532px;
 }

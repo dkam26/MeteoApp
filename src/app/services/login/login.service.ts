@@ -11,7 +11,6 @@ export class LoginService {
   constructor(private http: HttpClient, private router:Router,
              private cookieService: CookieService,public snackBar: MatSnackBar) {}
   loginUser(username, password){
-    console.log(username,password)
     const uri = 'https://meteoapiexpress.herokuapp.com/ul/login';
     const obj = {
       username: username,
@@ -22,12 +21,10 @@ export class LoginService {
     
     this.cookieService.set( 'Test', res['token'] )
     this.cookieValue = this.cookieService.get('Test');
-    console.log(this.cookieValue);
     this.router.navigate(['/search'])
   },
   (error)=>{
     this.snackBar.open(error.error['Message']);
-    console.log(error.error['Message'])
   }
   );
   }

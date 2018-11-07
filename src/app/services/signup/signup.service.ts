@@ -25,10 +25,10 @@ export class SignupService {
       duration: 500,
     });
     this.router.navigate(['/login']);
-    console.log(res['Message'])},
+},
   (error) =>{
     this.snackBar.open(error.error['Message']);
-    console.log(error.error['Message'])
+  
   });
 
   }

@@ -24,7 +24,6 @@ export class GetWeatherService {
    return this.http.post(uri, obj,httpOptions)
   }
   getWeather(coordinates, time, token) {
-    console.log(coordinates)
     const url = 'https://meteoapiexpress.herokuapp.com/ul/getweather';
     const obj = {
       time:time,
