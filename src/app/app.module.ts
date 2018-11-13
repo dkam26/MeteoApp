@@ -68,7 +68,9 @@ import { DisplaydataComponent } from './displaydata/displaydata.component';
       {path:'login', component:LoginComponent},
       {path: 'search', component:SearchComponent},
       {path: 'data', component:DisplaydataComponent},
-      {path:'', redirectTo: 'login', pathMatch: 'full'}
+      { path: '', redirectTo:'login', pathMatch:'full'},
+      { path: '**', redirectTo:'login', pathMatch:'full'}
+
     ])
   ],
   providers: [SignupComponent,
