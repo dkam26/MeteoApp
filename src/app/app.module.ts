@@ -13,7 +13,6 @@ import { RouterModule } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
 import { GetWeatherService } from './services/search/search.service';
 import { LoginComponent } from './login/login.component';
-import {HttpClientModule} from '@angular/common/http';
 import { SignupService } from './services/signup/signup.service';
 import { LoginService } from './services/login/login.service';
 import { FormsModule } from '@angular/forms';
@@ -21,6 +20,7 @@ import { SearchComponent } from './search/search.component';
 import {
   MatNativeDateModule
 } from '@angular/material';
+import { HttpModule } from '@angular/http';
 import {MatSnackBarModule} from '@angular/material';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatMomentDateModule, MAT_MOMENT_DATE_FORMATS } from "@angular/material-moment-adapter";
@@ -31,6 +31,7 @@ import {MatListModule} from '@angular/material/list';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { DisplaydataComponent } from './displaydata/displaydata.component';
+import {  HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -42,13 +43,13 @@ import { DisplaydataComponent } from './displaydata/displaydata.component';
     SearchresultsComponent,
     NavbarComponent,
     DisplaydataComponent,
-   
   
   ],
   imports: [BrowserAnimationsModule,
      MatSnackBarModule,
     MatToolbarModule,
     MatListModule,
+    HttpClientModule,
     MatMomentDateModule ,
     MatNativeDateModule,
     BrowserModule,
@@ -59,7 +60,6 @@ import { DisplaydataComponent } from './displaydata/displaydata.component';
     MatInputModule,
     MatCardModule,
     MatButtonModule,
-    HttpClientModule,
     FormsModule,
     MatDatepickerModule,
   
