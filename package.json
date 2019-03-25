@@ -6,7 +6,7 @@
     "start": "npm update  && node server.js",
     "start-dev": "npm run link && ng build && node server.js",
     "build": "ng build",
-    "test": "ng test",
+    "test": "ng test --watch=false",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
