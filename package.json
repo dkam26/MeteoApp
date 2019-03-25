@@ -5,7 +5,6 @@
     "ng": "ng",
     "start": "npm update  && node server.js",
 		"start-dev": "npm run link && ng build && node server.js",
-		"postinstall": "ng build --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
