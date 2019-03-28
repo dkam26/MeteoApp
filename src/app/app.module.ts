@@ -43,7 +43,7 @@ import {  HttpClientModule } from '@angular/common/http';
     SearchresultsComponent,
     NavbarComponent,
     DisplaydataComponent,
-  
+
   ],
   imports: [BrowserAnimationsModule,
      MatSnackBarModule,
@@ -62,7 +62,7 @@ import {  HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     FormsModule,
     MatDatepickerModule,
-  
+
     RouterModule.forChild([
       { path: 'signup', component:SignupComponent},
       {path:'login', component:LoginComponent},
@@ -80,7 +80,7 @@ import {  HttpClientModule } from '@angular/common/http';
     SignupService,
     LoginService,GetWeatherService],
   bootstrap: [AppComponent,
-  
+
   ]
 })
 export class AppModule { }
