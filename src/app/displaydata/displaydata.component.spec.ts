@@ -21,6 +21,8 @@ import {
   import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
+  
+
 describe('DisplaydataComponent', () => {
   let component: DisplaydataComponent;
   let fixture: ComponentFixture<DisplaydataComponent>;
