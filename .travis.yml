@@ -8,13 +8,14 @@ cache:
   directories:
     - node_modules
 install:
+  - npm update -g
   - npm install jest-cli
   - npm install coveralls --save
   - npm install jest-util
   - npm install
 # command to run tests
 script:
-  - npm  test
+  - npm test
 after_script:
 # "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   - cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
