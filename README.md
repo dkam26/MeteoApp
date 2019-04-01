@@ -1,5 +1,6 @@
 [![CircleCI](https://circleci.com/gh/dkam26/MeteoApp/tree/develop.svg?style=svg)](https://circleci.com/gh/dkam26/MeteoApp/tree/develop)
 
+[![Coverage Status](https://coveralls.io/repos/github/dkam26/MeteoApp/badge.svg?branch=develop)](https://coveralls.io/github/dkam26/MeteoApp?branch=develop)
 
 #  MeteoApp
  MeteoApp is an app that shows the weather forecast or patterns of a given location
