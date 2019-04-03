@@ -1,0 +1,41 @@
+.mat-toolbar.mat-toolbar-single-row {
+    margin-top: 21px;
+    margin-left: 42px;
+    margin-right: 321px;
+    width: 1354px;
+    
+}
+#logout {
+    margin-left: 1100px;
+}
+.mat-card{
+    width: 1154px;
+    margin-top: 70px;
+    height: 400px;
+    margin-left: 104px;
+}
+.example-form-field {
+    width: 400px;
+    margin-left: 300px;
+  }
+.mat-form-field.ng-tns-c3-1.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-hide-placeholder.ng-star-inserted {
+    padding-left: 370px;
+}
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+  margin-left: 430px;
+}
+p{
+    margin-left: 81px;
+}
+#keep {
+    margin-left: 564px;
+    margin-top: -87px;
+}
+.mat-list-item {
+    margin-top: 36px;
+}
+#deleteButton{
+    margin-left: 532px;
+}

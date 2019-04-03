@@ -1,0 +1,55 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 424px;
+    width: 1076px;
+  }
+  
+  .example-container > * {
+    width: 50%;
+  }
+  
+  .example-right-align {
+    text-align: left;
+  }
+  .example-container {
+      padding: 50px;
+  }
+  
+  .mat-card-content{
+    
+    margin-left: 194px;
+
+}
+  .mat-card-footer{
+      margin-right: 50px;
+      padding-left: 50px;
+  }
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+.mat-button {
+    padding-left: 10px;
+    width: 190px;
+}
+mat-form-field.ng-tns-c2-0.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-hide-placeholder{
+  text-align: center;
+}
+mat-form-field.ng-tns-c2-1.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-hide-placeholder{
+    text-align: center; 
+}
+#login{
+  margin-top: 40px
+}
+#title{
+  text-align: center
+}
+#loginform{
+  margin-left: -1px;
+  width: 711px;
+}

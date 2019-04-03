@@ -1,3 +1,7 @@
+[![CircleCI](https://circleci.com/gh/dkam26/MeteoApp/tree/develop.svg?style=svg)](https://circleci.com/gh/dkam26/MeteoApp/tree/develop)
+
+[![Coverage Status](https://coveralls.io/repos/github/dkam26/MeteoApp/badge.svg?branch=develop)](https://coveralls.io/github/dkam26/MeteoApp?branch=develop)
+
 #  MeteoApp
  MeteoApp is an app that shows the weather forecast or patterns of a given location
 
@@ -11,7 +15,7 @@
 - Users should be to delete the stored data.
 ## Motivation
 
-  Most weather apps provide forecast, users don't get a chance to look at the past weather patterns of a given a location. 
+  Most weather apps provide forecast, users don't get a chance to look at the past weather patterns of a given a location.
 
   A world is currently experiencing global warming and its becoming hard to tell if for example the rainy seasons are shorter or its hotter.
   The app would provide weather patterns to farmers to aid them to know when to plant and harvest.It would help Green energy activists make a case for their cause with data.

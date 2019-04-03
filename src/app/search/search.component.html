@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<mat-card>
+<mat-form-field class="example-form-field">
+  <input matInput type="text" placeholder="Search location" [(ngModel)]="location">
+  <!-- <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+    <mat-icon>close</mat-icon>
+  </button> -->
+  
+</mat-form-field>
+<mat-form-field>
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
+</mat-form-field><br/>
+<div class="example-button-row">
+  <button mat-raised-button color="primary" (click)="locate(date,location)">Search</button>
+</div>
+
+</mat-card>
+<app-searchresults *ngIf= 'results'[results]=results></app-searchresults>

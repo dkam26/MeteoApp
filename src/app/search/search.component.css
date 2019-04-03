@@ -1,0 +1,18 @@
+.mat-card{
+    width: 1221px;
+    height: 124px;
+    margin-top: 70px;
+    margin-left: 98px;
+}
+.example-form-field {
+    width: 400px;
+    margin-left: 300px;
+  }
+.mat-form-field.ng-tns-c3-1.mat-primary.mat-form-field-type-mat-input.mat-form-field-appearance-legacy.mat-form-field-can-float.mat-form-field-hide-placeholder.ng-star-inserted {
+    padding-left: 101px;
+}
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+  margin-left: 562px;
+}

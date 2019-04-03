@@ -1,0 +1,25 @@
+ <div class="example-container">
+        <mat-card >
+                <h2 id="title">MeteoApp</h2>
+               </mat-card>
+        <mat-card id ="signup">
+            <mat-card-content>
+              <mat-form-field>
+                    <input matInput placeholder="First name" type="text" class="example-right-align" [(ngModel)]="firstname">
+                </mat-form-field><br/>
+                <mat-form-field>
+                    <input matInput placeholder="Second name" type="text" class="example-right-align" [(ngModel)]="secondname">
+                </mat-form-field><br/>
+        <mat-form-field>
+          <input matInput placeholder="Username" type="text" class="example-right-align" [(ngModel)]="username">
+        </mat-form-field><br/>
+        <mat-form-field>
+          <input matInput placeholder="Password" type="password" [(ngModel)]="password">
+        </mat-form-field><br/>
+        <mat-form-field>
+            <input matInput placeholder="Email" type="text" class="example-right-align" [(ngModel)]="email">
+        </mat-form-field><br/>
+        <button mat-button (click)="addUser(username, firstname, secondname, password, email)">Signup</button>
+        </mat-card-content>
+      </mat-card>
+  </div>
