@@ -21,7 +21,7 @@ import {
   import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
-  
+
 
 describe('DisplaydataComponent', () => {
   let component: DisplaydataComponent;
@@ -61,4 +61,13 @@ describe('DisplaydataComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('deleteData function should exist', () => {
+    expect(component.deleteData).toBeTruthy();
+  });
+
+  it('logout function should exist', () => {
+    expect(component.logout).toBeTruthy();
+  });
+
 });

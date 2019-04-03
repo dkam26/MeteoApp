@@ -52,4 +52,9 @@ describe('SearchresultsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('savedata function should exist', () => {
+    expect(component.savedata).toBeTruthy();
+  });
+
 });

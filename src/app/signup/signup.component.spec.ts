@@ -13,13 +13,16 @@ import {
     MatCardModule,
     MatButtonModule,
 } from '@angular/material';
+import { SignupService } from '../services/signup/signup.service';
 describe('SignupComponent', () => {
   let component: SignupComponent;
   let fixture: ComponentFixture<SignupComponent>;
 
+
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ SignupComponent ],
+      providers: [ SignupService ],
       imports: [
         MatFormFieldModule,
         MatIconModule,
@@ -44,5 +47,8 @@ describe('SignupComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+  it('addUser function should exist', () => {
+    expect(component.addUser).toBeTruthy();
   });
 });

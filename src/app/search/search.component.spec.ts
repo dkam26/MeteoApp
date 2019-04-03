@@ -65,4 +65,8 @@ describe('SearchComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('locate function should exist', () => {
+    expect(component.locate).toBeTruthy();
+  });
 });

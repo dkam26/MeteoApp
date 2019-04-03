@@ -60,4 +60,9 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('loginUser function should exist', () => {
+    expect(component.loginUser).toBeTruthy();
+  });
+  
 });
